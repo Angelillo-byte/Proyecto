@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG Panadería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="videos imagenes/panaderia.png">
+</head>
+<body>
+    <header>
+        <div class="logo">HG Panadería</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="video-section">
+        <div id="inicio" class="video-wrapper">
+            <video id="background-video" autoplay loop muted>
+                <source src="videos imagenes/HG Panaderia.mp4" type="video/mp4">
+            </video>
+            <button id="mute-button" onclick="toggleMute()">🔊</button>
+            <div class="video-overlay">
+                <h1>Bienvenido a HG Panadería</h1>
+                <p>Calidad y Tradición en Cada Bocado</p>
+                <button onclick="scrollToSection('productos')">Conoce nuestros productos</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <section id="productos">
+            <h2>Panes</h2>
+            <div class="producto">
+                <img src="videos imagenes/helena-yankovska-QXSvbDkiJmY-unsplash.jpg" alt="Pan de Masa Madre">
+                <h3>Pan de Masa Madre</h3>
+                <p>Elaborado con la mejor harina y fermentado de manera natural.</p>
+            </div>
+            <div class="producto">
+                <img src="videos imagenes/wesual-click-rsWZ-P9FbQ4-unsplash.jpg" alt="Pan Integral">
+                <h3>Pan Integral</h3>
+                <p>Rico en fibra y sabor.</p>
+            </div>
+            
+            <h2>Pasteles</h2>
+            <div class="producto">
+                <img src="videos imagenes/american-heritage-chocolate-Id8BO472TbY-unsplash.jpg" alt="Pastel de Chocolate">
+                <h3>Pastel de Chocolate</h3>
+                <p>Delicioso y esponjoso.</p>
+            </div>
+            <div class="producto">
+                <img src="videos imagenes/priscilla-du-preez-BpVSPBPX-5M-unsplash.jpg" alt="Tarta de Manzana">
+                <h3>Tarta de Manzana</h3>
+                <p>Tradicional y llena de sabor.</p>
+            </div>
+
+        </section>
+        
+        <section id="nosotros" class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos los hermanos Gálvez, apasionados por la panadería artesanal. Nuestra misión es ofrecer productos de la más alta calidad, elaborados con ingredientes frescos y naturales.</p>
+            <img src="videos imagenes/rodolfo-marques-GzBO_o0RvEg-unsplash.jpg" alt="Los hermanos Gálvez">
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+            </div>
+            <div class="redes-sociales">
+                <a target="_blank" href="https://facebook.com"><img src="videos imagenes/facebook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://twitter.com"><img src="videos imagenes/instagram.png" alt="Twitter"></a>
+              
+            </div>
+        </section>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
